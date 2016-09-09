@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CornerLabel">
+        <attr name="tl_position">
+            <flag name="topLeft" value="0"/>
+            <flag name="topRight" value="1"/>
+            <flag name="bottomLeft" value="2"/>
+            <flag name="bottomRight" value="3"/>
+        </attr>
+        <attr name="tl_label" format="string|reference"/>
+        <attr name="tl_labelSize" format="dimension|reference"/>
+        <attr name="tl_labelColor" format="color|reference"/>
+        <attr name="tl_background" format="color|reference"/>
+    </declare-styleable>
+</resources>
