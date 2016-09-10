@@ -179,7 +179,7 @@ public class CornerLabel extends View {
         mTrianglePath.close();
         canvas.drawPath(mTrianglePath, mBackgroundPaint);
         canvas.rotate(-45, width / 2, height / 2);
-        canvas.drawText(mLabel, (width - textWidth) / 2f + getPaddingLeft(), height / 2f - textHeight - metrics.ascent + getPaddingTop(), mTextPint);
+        canvas.drawText(mLabel, (width - textWidth) / 2f + getPaddingLeft(), height / 2f - getPaddingBottom(), mTextPint);
         break;
       case TOP_RIGHT:
         mTrianglePath.moveTo(width, 0);
@@ -188,7 +188,7 @@ public class CornerLabel extends View {
         mTrianglePath.close();
         canvas.drawPath(mTrianglePath, mBackgroundPaint);
         canvas.rotate(45, width / 2, height / 2);
-        canvas.drawText(mLabel, (width - textWidth) / 2f + getPaddingLeft(), height / 2f - textHeight - metrics.ascent + getPaddingTop(), mTextPint);
+        canvas.drawText(mLabel, (width - textWidth) / 2f + getPaddingLeft(), height / 2f - getPaddingBottom(), mTextPint);
         break;
       case BOTTOM_LEFT:
         mTrianglePath.moveTo(0, height);
@@ -197,7 +197,7 @@ public class CornerLabel extends View {
         mTrianglePath.close();
         canvas.drawPath(mTrianglePath, mBackgroundPaint);
         canvas.rotate(45, width / 2, height / 2);
-        canvas.drawText(mLabel, (width - textWidth) / 2f + getPaddingLeft(), height / 2f + textHeight - metrics.bottom + getPaddingTop(), mTextPint);
+        canvas.drawText(mLabel, (width - textWidth) / 2f + getPaddingLeft(), height / 2f + textHeight - getPaddingBottom(), mTextPint);
         break;
       case BOTTOM_RIGHT:
         mTrianglePath.moveTo(width, height);
@@ -206,7 +206,7 @@ public class CornerLabel extends View {
         mTrianglePath.close();
         canvas.drawPath(mTrianglePath, mBackgroundPaint);
         canvas.rotate(-45, width / 2, height / 2);
-        canvas.drawText(mLabel, (width - textWidth) / 2f + getPaddingLeft(), height / 2f + textHeight - metrics.bottom + getPaddingTop(), mTextPint);
+        canvas.drawText(mLabel, (width - textWidth) / 2f + getPaddingLeft(), height / 2f + textHeight - getPaddingBottom(), mTextPint);
         break;
       default:
         break;
