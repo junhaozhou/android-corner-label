@@ -4,7 +4,8 @@ Corner triangle label view
 #Features
 - 4 position：top-left, top-right, bottom-left, bottom-right
 
-#Usage
+
+# Usage
 ```
     <com.littlechoc.cornerlabel.CornerLabel
         android:layout_width="wrap_content"
@@ -16,4 +17,10 @@ Corner triangle label view
         app:tl_labelColor="#FFFFFF"
         app:tl_position="topRight"
         />
+```
+# Install
+```
+dependencies {
+  compile 'com.littlechoc.cornerlabel:cornerlabel:1.0.0'
+}
 ```
